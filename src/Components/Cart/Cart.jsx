@@ -75,21 +75,23 @@ const Cart = (props) => {
         <span>Total Amount</span>
         <span>${totalAmount}</span>
       </div>
-      {!displayForm && (
+      {
         <div className={styles["cart-button"]}>
           <button className={styles["close-btn"]} onClick={props.onClose}>
             Close
           </button>
           {itemInCart && <button onClick={displayOrderForm}>Order</button>}
         </div>
-      )}
+      }
     </React.Fragment>
   );
+
+  // !displayForm &&
 
   return (
     <Modal onClose={props.onClose}>
       {!isSubmitting && !isSubmitted && cartMakrkups}
-      {displayForm && !isSubmitting && !isSubmitted && (
+      {displayForm && !isSubmitting && !isSubmitted && itemInCart && (
         <OrderDetails onConfirm={submitHandler} onClose={props.onClose} />
       )}
 
