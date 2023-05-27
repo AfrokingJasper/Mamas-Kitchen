@@ -48,9 +48,6 @@ const Cart = (props) => {
     setIsSubmitting(false);
     setIsSubmitted(true);
     cartClearHandler();
-    console.log(cartCtx.items);
-    console.log(userdData);
-    // setIsSubmitting(false);
   };
 
   const submitting = <p>Submitting...</p>;
