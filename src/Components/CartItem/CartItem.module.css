@@ -54,3 +54,24 @@
   background-color: #8a2b06;
   color: white;
 }
+
+@media (max-width: 650px) {
+  .title {
+    font-size: 1.1rem;
+  }
+
+  .number {
+    border: 1px solid lightgray;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .action {
+    gap: 0.7rem;
+  }
+
+  .action button {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.2rem 0.7rem;
+  }
+}

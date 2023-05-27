@@ -3,6 +3,7 @@ import Modal from "../UI/Modal";
 import CartContext from "../../store/cart-context";
 import styles from "./Cart.module.css";
 import CartItem from "../CartItem/CartItem";
+import OrderDetails from "./OrderDetails";
 
 const Cart = (props) => {
   const cartCtx = useContext(CartContext);
@@ -46,6 +47,7 @@ const Cart = (props) => {
         </button>
         {itemInCart && <button>Order</button>}
       </div>
+      <OrderDetails />
     </Modal>
   );
 };

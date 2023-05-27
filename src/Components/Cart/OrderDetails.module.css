@@ -1,0 +1,45 @@
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.details input {
+  border-radius: 0.5rem;
+  border: 1px solid #8a2b06;
+  padding: 0.5rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  align-self: end;
+}
+
+.cancel {
+  background-color: white;
+  color: #8a2b06;
+}
+
+.cancel:hover {
+  background-color: #8a2b06;
+  color: white;
+}
+
+@media (max-width: 650px) {
+  .order-form {
+    gap: 0.5rem;
+    padding: 0.2rem;
+    padding-top: 1rem;
+  }
+
+  .details input {
+    padding: 0.3rem;
+  }
+}
